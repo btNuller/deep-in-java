@@ -67,7 +67,7 @@ Since JDK8
 
 [^segmentfault]: 模块化编程更加聚焦功能，依赖或者暴露更为明确，对开发者的要求更高
 
-#####  Java模块化基础
+#####  Java模块化基础及核心概念
 
 ######  模块路径（Module Path）
 
@@ -103,7 +103,19 @@ Since JDK8
 
 需要微服务化应用
 
+凡是定义module-info.java (module-info.class) 属于命名模块（Java9 + 模块化 artifact）
+
+Java9之前的artifact属于非命名模块
+
+​    自动化模块
+
+​		如果在 **MANIFEST.MF **定义了 **Automatic-Module-Name** 属性，那么采用该属性值作模块名称
+
+​        否则，使用jar文件的名称（如果存在“-”的话，将其替换为“.”）
+
 #####  Java模块化反射
+
+
 
 #####  总结
 
