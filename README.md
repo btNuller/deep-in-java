@@ -91,9 +91,17 @@ Since JDK8
 
 如上图所示，模块com.foo.app依赖模块com.foo.bar和java.sql，说明java.sql对com.foo.app是可读的。同时，java.sql依赖java.xml和java.logging模块，然而这并不意味java.xml或java.logging对com.foo.app可读。简言之，可读性无法在跨层模块之间生效。
 
-#####  Java模块化核心概念
+#####  
 
 #####  Java模块化迁移
+
+###### 迁移分析
+
+需要明确应用实现依赖的JDK模块
+
+需要明确二方或者三方jar所依赖的JDK模块
+
+需要微服务化应用
 
 #####  Java模块化反射
 
