@@ -1,5 +1,23 @@
 ##  一入Java深似海
 
+#####  项目提供的相关环境
+京东1号
+
+114.67.127.19
+
+root
+
+S65wUvY66qESDNib
+
+--------------
+京东2号
+
+114.67.127.146
+
+root
+
+S65wUvY66qESDNib
+
 ####  1. 面向对象
 
 ######  通用设计——可访问性
@@ -67,7 +85,7 @@ Since JDK8
 
 ######  模块解析(Resolution)
 
-![image-20210218161636651](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210218161636651.png)
+![image-20210218161636651](http://www.codeforc.com:9000/public/deepinjava/1-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20210218%2F%2Fs3%2Faws4_request&X-Amz-Date=20210218T101144Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=e36e57a00a3a7c7788f566957d4628841ed78f4c7ae15fdf28a342e18d060f4e)
 
 ###### 可读性（Readability）
 
