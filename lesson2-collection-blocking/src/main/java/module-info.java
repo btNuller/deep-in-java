@@ -5,4 +5,5 @@ module lesson2.collection.blocking {
 //    requires java.sql; //传递依赖 requires
     requires java.se;
     requires spring.context;
+//    requires spring.context;
 }

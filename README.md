@@ -18,7 +18,7 @@ root
 
 S65wUvY66qESDNib
 
-####  1. 面向对象
+###  1. 面向对象
 
 ######  通用设计——可访问性
 
@@ -63,7 +63,7 @@ Since JDK8
 
 
 
-####  2. 模块化编程
+###  2. 模块化编程
 
 [^segmentfault]: 模块化编程更加聚焦功能，依赖或者暴露更为明确，对开发者的要求更高
 
@@ -113,9 +113,48 @@ Java9之前的artifact属于非命名模块
 
 ​        否则，使用jar文件的名称（如果存在“-”的话，将其替换为“.”）
 
-#####  Java模块化反射
-
 
 
 #####  总结
 
+Java模块化对工程整体提升不大，但是对开发人员要求较高，另外Gradle、Maven可以通过严谨的引入方式避免Java模块化能解决的问题，起到相同的效果，目前Java模块化的应用并不广，但确是一种设计方向。
+
+### 3.集合框架
+
+##### 集合框架总览
+
+> https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html
+
+集合框架是一个用于展示和操作集合的统一架构，其实现细节能够让集合独立操作。
+
+## Introduction
+
+The Java platform includes a *collections framework*. A *collection* is an object that represents a group of objects (such as the classic [Vector](https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html) class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
+
+The primary advantages of a collections framework are that it:
+
+- **Reduces programming effort** by providing data structures and algorithms so you don't have to write them yourself.
+- **Increases performance** by providing high-performance implementations of data structures and algorithms. Because the various implementations of each interface are interchangeable, programs can be tuned by switching implementations.
+- **Provides interoperability between unrelated APIs** by establishing a common language to pass collections back and forth.
+- **Reduces the effort required to learn APIs** by requiring you to learn multiple ad hoc collection APIs.
+- **Reduces the effort required to design and implement APIs** by not requiring you to produce ad hoc collections APIs.
+- **Fosters software reuse** by providing a standard interface for collections and algorithms with which to manipulate them.
+
+###### 主要优势：
+
+1. 提供数据结构和算法以减少程序员的开发工作
+2. 通过数据结构和算法以提升程序性能
+3. 提供无关API之间的互用性
+4. 减少学习API的负担
+5. 减少设计与实现API的负担
+6. 促进软件重用
+
+
+
+##### 集合框架内建实现
+
+##### 集合框架抽象实现
+
+##### 集合框架面试题
+
+##### 总结
