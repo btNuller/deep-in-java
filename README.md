@@ -149,7 +149,19 @@ The primary advantages of a collections framework are that it:
 5. 减少设计与实现API的负担
 6. 促进软件重用
 
+###### 基本组成：
 
+1. Collection interfaces（集合接口）
+2. Infrastructure（基础设施）
+3. General-purpose implementations（通用实现）
+4. Abstract implementations（抽象实现）
+5. Legacy implementations（遗留实现）
+6. Convenience implementations（便利实现）
+7. Wrapper implementations（包装实现）
+8. Special-purpose implementations（特殊实现）
+9. Array Utilities（数组工具类）
+10. Algorithms（算法）
+11. Concurrent implementations（并发实现）
 
 ##### 集合框架内建实现
 
