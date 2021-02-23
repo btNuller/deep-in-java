@@ -165,6 +165,37 @@ The primary advantages of a collections framework are that it:
 
 ##### 集合框架内建实现
 
+| 接口  | 哈希表  | 可变数组   | 平衡树  | 链表       | 哈希表+链表   |
+| ----- | ------- | ---------- | ------- | ---------- | ------------- |
+| Set   | HashSet |            | TreeSet |            | LinkedhashSet |
+| List  |         | ArrayList  |         | LinkedList |               |
+| Deque |         | ArrayQueue |         | LinkedList |               |
+| Map   | HashMap |            | TreeMap |            | ListedHashMap |
+
+
+
+###### 并发实现
+
+java.util.concurrent.LinkedBlockingQueue
+
+java.util.concurrent.ArrayBlockingQueue
+
+java.util.concurrent.PriorityBlockingQueue
+
+java.util.concurrent.DelayQueue
+
+java.util.concurrent.LinkedBlockingDeque
+
+java.util.concurrent.CopyOnWriteArrayList
+
+java.util.concurrent.LinkedTransferQueue
+
+java.util.concurrent.CopyOnWriteArraySet
+
+java.util.concurrent.ConcurrentSkipListSet
+
+
+
 ##### 集合框架抽象实现
 
 ##### 集合框架面试题
