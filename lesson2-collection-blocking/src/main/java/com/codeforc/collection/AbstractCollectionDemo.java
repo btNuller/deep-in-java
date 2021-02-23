@@ -1,8 +1,6 @@
 package com.codeforc.collection;
 
-import java.util.AbstractList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * AbstractCollection
@@ -10,7 +8,22 @@ import java.util.List;
 public class AbstractCollectionDemo {
 
     public static void main(String[] args) {
-        abstractList();
+//        abstractList();
+        List<String> objects = new ArrayList<>();
+        objects.add("test1");
+        objects.add("test2");
+        objects.add("test3");
+        objects.add("test4");
+        randomAccess(objects);
+
+        Integer[] intarray = of(1,2,3,4,5,6, 188);
+
+        Integer[] intArrayCopy = Arrays.copyOf(intarray, intarray.length);
+        intArrayCopy[0] = 999;
+
+        System.out.println(Arrays.toString(intarray));
+        System.out.println();
+        System.out.println(Arrays.toString(intArrayCopy));
     }
 
     private static void abstractList() {
@@ -23,5 +36,18 @@ public class AbstractCollectionDemo {
         numbers.set(4, 0);
 
         numbers.forEach(System.out::println);
+    }
+
+    public static void randomAccess(Collection<String> collection) {
+        collection.forEach(System.out::println);
+
+        System.out.println("update");
+        collection.add("time for you");
+        collection.remove("test1");
+        collection.forEach(System.out::println);
+    }
+
+    public static Integer[] of(Integer... values) {
+        return values;
     }
 }
