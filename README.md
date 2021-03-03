@@ -85,7 +85,7 @@ Since JDK8
 
 ######  模块解析(Resolution)
 
-![image-20210218161636651](http://www.codeforc.com:9000/public/deepinjava/1-1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20210218%2F%2Fs3%2Faws4_request&X-Amz-Date=20210218T101144Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=e36e57a00a3a7c7788f566957d4628841ed78f4c7ae15fdf28a342e18d060f4e)
+
 
 ###### 可读性（Readability）
 
@@ -196,10 +196,18 @@ java.util.concurrent.ConcurrentSkipListSet
 
 
 
-##### 集合框架抽象实现
+
+
+##### 常见问题
+
+Q：如果类覆盖了Object的equals方法，那么hashCode方法需不需要覆盖？
+
+A：不强制覆盖，但是建议实现，注意不要将hashCode()作为equals方法的实现，可参考Objects.hash()以及Arrays.hashCode(Object[]), hashCode()是一个计算较重的实现， equals通常是做对象属性的比较
 
 
 
-##### 集合框架面试题
+Q：如果类覆盖了Object的hashCode()，那么equals(Object) 方法，方法需不需要覆盖？
+
+A：必须实现hashCode()是用于hash计算的，比如HashMap，由于不同对象的hashCode()方法可能返回相同的数据，原因一：int数据范围是 - 2 ^ 31  ----  2 ^ 31 - 1
 
 ##### 总结

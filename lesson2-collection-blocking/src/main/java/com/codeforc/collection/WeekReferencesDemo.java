@@ -4,14 +4,12 @@ import java.lang.ref.WeakReference;
 
 public class WeekReferencesDemo {
 
-    public static void main(String[] args) {
-
-        String value = "111";
-
-
-        WeakReference<User> weakReference = new WeakReference<>(new User("张三"));
-        User user = weakReference.get();
-
+    public static void main(String[] args) throws InterruptedException {
+        WeakReference<User> userWeakReference = new WeakReference<>(new User("张三"));
+        for(int i = 0; i < 10000; i++) {
+            Thread.sleep(1 * 5000);
+            System.out.println(userWeakReference.get());
+        }
     }
 
     public static class User {
